@@ -1,0 +1,44 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+%font-quicksand {
+    font-family: 'Quicksand', sans-serif;
+}
+
+%font-sans {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+::selection {
+    background-color: $orange_dark;
+    color: $white_off;
+}
+
+html {
+    -webkit-font-smoothing: antialiased; // Fix fatty fonts
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: regular;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    @extend %font-quicksand;
+    color: $blue_dark;
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p {
+    font-size: 24px;
+}

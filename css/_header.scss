@@ -1,0 +1,58 @@
+// Header
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    z-index: 100;
+    margin-top: 30px;
+    transition: 350ms ease;
+    &.header-scrolled {
+        margin-top: 0;
+        background-color: rgba($blue_light,.75);
+    }
+
+    .header-container {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-header {
+        height: 30px;
+        width: auto;
+        pointer-events: none;
+    }
+}
+
+nav {
+    height: 100%;
+    margin-right: 0;
+    transition: 350ms ease;
+    &.header-scrolled {
+        margin-right: 240px;
+    }
+    ul {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li:not(:last-child) {
+        margin-right: 40px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
